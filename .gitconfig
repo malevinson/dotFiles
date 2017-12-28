@@ -1,28 +1,29 @@
 [alias]
-	c = commit -am
-	up = pull
+        c = commit -am
+        up = pull
 cm = checkout master
+rh = reset HEAD~
 prom = pull --rebase origin master
-	p = push
+        p = push
 pom = pull origin master
 bd = branch -D
 rhom = reset --hard origin/master
 po = push origin
 l = log
 rf = reset public/JCheckout.js public/JLiteCheckout.js public/index.html src/index.js
-	s = status
-	ac = !git add . && git commit -m
-	sclone = clone --depth=1
-	amend = commit --amend --all
-	co = checkout
-	logp = log --pretty=oneline
-	df = diff --color --color-words --abbrev
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+        s = status
+        ac = !git add . && git commit -m
+        sclone = clone --depth=1
+        amend = commit --amend --all
+        co = checkout
+        logp = log --pretty=oneline
+        df = diff --color --color-words --abbrev
+        lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 
-	# Show the diff between the latest commit and the current state
-	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
+        # Show the diff between the latest commit and the current state
+        d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
 
-	reup = rebase-update # depot_tools specific
+        reup = rebase-update # depot_tools specific
 [merge]
  keepBackup = false
        tool = p4merge
@@ -35,7 +36,7 @@ rf = reset public/JCheckout.js public/JLiteCheckout.js public/index.html src/ind
 [diff]
    tool = p4merge
 [difftool "p4merge"]
-       cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge "\"$REMOTE\"" "\"$LOCAL\""	
+       cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge "\"$REMOTE\"" "\"$LOCAL\""
 [user]
-	email = matthew_levinson@gap.com
-	name = Matt Levinson
+        email = matthew_levinson@gap.com
+        name = Matt Levinson
