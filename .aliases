@@ -5,6 +5,7 @@ else # OS X `ls`
   colorflag="-G"
 fi
 
+alias gk = 'gitk'
 # List all files colorized in long format
 alias ll='ls -lh'
 alias ..="cd .."
@@ -45,7 +46,7 @@ alias ph="push"
 alias r="reset"
 alias h="hard"
 alias om="origin/master"
-
+alias po="push origin"
 # Undo a `git push`
 alias undopush="git push -f origin HEAD^:master"
 
