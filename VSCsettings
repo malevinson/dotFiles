@@ -1,6 +1,7 @@
 {
     "editor.formatOnSave": true,
     "prettier.singleQuote": true,
+    "prettier.proseWrap": true,
     "gitlens.advanced.messages": {
         "suppressCommitHasNoPreviousCommitWarning": false,
         "suppressCommitNotFoundWarning": false,
