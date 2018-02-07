@@ -229,7 +229,7 @@ values."
    ;; If non nil the frame is maximized when Emacs starts up.
    ;; Takes effect only if `dotspacemacs-fullscreen-at-startup' is nil.
    ;; (default nil) (Emacs 24.4+ only)
-   dotspacemacs-maximized-at-startup nil
+   dotspacemacs-maximized-at-startup t
    ;; A value from the range (0..100), in increasing opacity, which describes
    ;; the transparency level of a frame when it's active or selected.
    ;; Transparency can be toggled through `toggle-transparency'. (default 90)
@@ -296,6 +296,7 @@ values."
    ))
 
 (defun dotspacemacs/user-init ()
+  (setq-default git-magit-status-fullscreen t)
   "Initialization function for user code.
 It is called immediately after `dotspacemacs/init', before layer configuration
 executes.
@@ -307,6 +308,8 @@ before packages are loaded. If you are unsure, you should try in setting them in
 (defun dotspacemacs/user-config ()
 (setq-default header-line-format mode-line-format)
 (setq-default mode-line-format nil)
+(setq magit-repository-directories `("~/gap/"))
+(global-git-commit-mode t)
   "Configuration function for user code.
 This function is called at the very end of Spacemacs initialization after
 layers configuration.
