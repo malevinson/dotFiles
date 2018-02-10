@@ -1,8 +1,32 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 [alias]
         c = commit -am
         up = pull
 cm = checkout master
 rh = reset HEAD~
+rh2= reset HEAD~2
+rh3 = reset HEAD~3
+d = diff
 prom = pull --rebase origin master
         p = push
 pom = pull origin master
@@ -40,3 +64,19 @@ rf = reset public/JCheckout.js public/JLiteCheckout.js public/index.html src/ind
 [user]
         email = matthew_levinson@gap.com
         name = Matt Levinson
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+".gitconfig" [readonly] 45L, 1535C
