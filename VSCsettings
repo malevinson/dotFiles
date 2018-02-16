@@ -1,6 +1,5 @@
 {
     "editor.formatOnSave": true,
-    "vim.easymotion": true,
     "vim.incsearch": true,
     "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
@@ -10,11 +9,21 @@
     "editor.wordWrap": "on",
     "editor.fontFamily": "Hack",
     "vim.statusBarColorControl": true,
+    "vim.statusBarColors": {
+        "normal": "#268bd2",
+        "insert": "#d33682",
+        "visual": "#268bd2",
+        "visualline": "#2aa198",
+        "visualblock": "#859900",
+        "replace": "#b58900"
+    },
     "vim.leader": "<space>",
+    "scrolloff.alwaysCenter": true,
     "vim.handleKeys": {
         "<C-a>": false,
         "<C-f>": false
     },
+    "editor.minimap.enabled": false,
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorTheme": "Spacemacs - dark",
     "vim.otherModesKeyBindingsNonRecursive": [
@@ -624,5 +633,12 @@
             ]
         }
     ],
-    "vim.easymotion": true
+    "vim.easymotion": true,
+    "window.zoomLevel": 0,
+    "workbench.activityBar.visible": false,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#2aa198",
+        "statusBar.noFolderBackground": "#2aa198",
+        "statusBar.debuggingBackground": "#2aa198"
+    }
 }
