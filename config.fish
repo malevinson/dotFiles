@@ -30,7 +30,8 @@ function cd..
     cd ..
 end
 
-#NEW FEB 15TH-----------
+
+----------#NEW FEB 15TH-----------
 function gcp
     git cherry-pick $argv;
 end
@@ -62,7 +63,7 @@ function glg
 	git log
 end
 function gll
-	git log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+	git log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%an]" --decorate --numstat
 end
 function gl1
 	git log --numstat -1
@@ -80,7 +81,7 @@ function gl5
 	git log --numstat -5
 end
 function gld
-	git log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+	git log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%an]" --decorate --date=relative
 end
 function gprom
 	git pull --rebase origin master
@@ -103,14 +104,17 @@ end
 function gfa
 	git fetch --all
 end
-function ghrom
+function grhom
 	git reset --hard origin master
 end
-function ghrod
+function grhod
 	git reset --hard origin develop
 end
 function gc
     git commit -am $argv;
+end
+function gcc
+    git commit -m $argv;
 end
 function gcm
 	git checkout master
