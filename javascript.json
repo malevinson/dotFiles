@@ -2,7 +2,8 @@
 	"Print to console": {
 		"prefix": "lg",
 		"body": [
-			"console.log('%c' + $1 , 'background: red; color: #83f52c');"
+			"console.log('%c' + '||||||||||||' , 'background: red; color: #83f52c');",
+			"console.log($1)"
 		],
 		"description": "Log output to console"
 	},
