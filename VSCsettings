@@ -1,4 +1,16 @@
 {
+    "vim.easymotion": true,
+    "workbench.activityBar.visible": false,
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/build": true,
+        ".*": true,
+        "**/.sass-cache": true,
+        "repos": true
+    },
+    "window.zoomLevel": 0,
+    "material-icon-theme.showUpdateMessage": false,
     "editor.formatOnSave": true,
     "editor.fontFamily": "Hack",
     "workbench.colorCustomizations": {
@@ -29,15 +41,6 @@
         "replace": "block-outline"
     },
     "editor.wordWrap": "on",
-    // "vim.statusBarColorControl": true,
-    // "vim.statusBarColors": {
-    //     "normal": "#268bd2",
-    //     "insert": "#d33682",
-    //     "visual": "#268bd2",
-    //     "visualline": "#2aa198",
-    //     "visualblock": "#859900",
-    //     "replace": "#b58900"
-    // },
     "vim.leader": "<space>",
     "scrolloff.alwaysCenter": true,
     "vim.handleKeys": {
@@ -47,6 +50,17 @@
     "editor.minimap.enabled": false,
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorTheme": "Spacemacs - dark",
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "f",
+                "d"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
     "vim.otherModesKeyBindingsNonRecursive": [
         {
             "before": [
@@ -643,18 +657,4 @@
             ]
         }
     ],
-    "vim.insertModeKeyBindings": [
-        {
-            "before": [
-                "f",
-                "d"
-            ],
-            "after": [
-                "<Esc>"
-            ]
-        }
-    ],
-    "vim.easymotion": true,
-    "window.zoomLevel": 0,
-    "workbench.activityBar.visible": false,
 }
