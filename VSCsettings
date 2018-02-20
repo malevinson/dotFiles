@@ -1,5 +1,6 @@
 {
     "editor.formatOnSave": true,
+    "editor.fontFamily": "Hack",
     "workbench.colorCustomizations": {
         "statusBar.background": "#268bd2",
         "statusBar.noFolderBackground": "#268bd2",
