@@ -1,22 +1,41 @@
 {
     "editor.formatOnSave": true,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#268bd2",
+        "statusBar.noFolderBackground": "#268bd2",
+        "statusBar.debuggingBackground": "#268bd2",
+        // "editor.foreground": "#42f4c5",
+        // "editorCursor.background": "#42f4c5",
+        "editorCursor.foreground": "#fcf800",
+        // "editor.selectionHighlightBackground": "#fcf800"
+        "editor.lineHighlightBackground": "#471a1e",
+        "editorBracketMatch.border": "#42f4c5"
+        // "editor.lineHighlightBorder": "#335e4c"
+        // "editor.background": "#42f4c5",
+    },
     "vim.incsearch": true,
     "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
     "vim.hlsearch": true,
+    "vim.searchHighlightColor": "rgba(250, 250, 250, 0.3)",
     "prettier.singleQuote": true,
     "prettier.proseWrap": true,
-    "editor.wordWrap": "on",
-    "editor.fontFamily": "Hack",
-    "vim.statusBarColorControl": true,
-    "vim.statusBarColors": {
-        "normal": "#268bd2",
-        "insert": "#d33682",
-        "visual": "#268bd2",
-        "visualline": "#2aa198",
-        "visualblock": "#859900",
-        "replace": "#b58900"
+    "vim.substituteGlobalFlag": true,
+    "vim.cursorStylePerMode": {
+        "normal": "underline",
+        "insert": "line-thin",
+        "replace": "block-outline"
     },
+    "editor.wordWrap": "on",
+    // "vim.statusBarColorControl": true,
+    // "vim.statusBarColors": {
+    //     "normal": "#268bd2",
+    //     "insert": "#d33682",
+    //     "visual": "#268bd2",
+    //     "visualline": "#2aa198",
+    //     "visualblock": "#859900",
+    //     "replace": "#b58900"
+    // },
     "vim.leader": "<space>",
     "scrolloff.alwaysCenter": true,
     "vim.handleKeys": {
@@ -635,10 +654,5 @@
     ],
     "vim.easymotion": true,
     "window.zoomLevel": 0,
-    "workbench.activityBar.visible": false,
-    "workbench.colorCustomizations": {
-        "statusBar.background": "#2aa198",
-        "statusBar.noFolderBackground": "#2aa198",
-        "statusBar.debuggingBackground": "#2aa198"
-    }
+    "workbench.activityBar.visible": true,
 }
