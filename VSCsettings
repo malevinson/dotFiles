@@ -1,6 +1,6 @@
 {
     "vim.easymotion": true,
-    "workbench.activityBar.visible": false,
+    "workbench.activityBar.visible": true,
     "search.exclude": {
         "**/node_modules": true,
         "**/bower_components": true,
@@ -44,8 +44,8 @@
     "vim.leader": "<space>",
     "scrolloff.alwaysCenter": true,
     "vim.handleKeys": {
-        "<C-a>": false,
-        "<C-f>": false
+        // "<C-a>": false,
+        // "<C-f>": false
     },
     "editor.minimap.enabled": false,
     "workbench.iconTheme": "material-icon-theme",
