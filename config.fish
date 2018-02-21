@@ -59,8 +59,8 @@ end
 function gs
     git status
 end
-function glg
-	git log
+function gl
+    git log
 end
 function gll
 	git log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%an]" --decorate --numstat
@@ -105,13 +105,28 @@ function gfa
 	git fetch --all
 end
 function grhom
-	git reset --hard origin master
+	git reset --hard origin/master
+end
+function gpo
+    git push origin HEAD
+end
+function gsa1
+    git stash apply stash@{1}
+end
+function gsa2
+    git stash apply stash@{2}
+end
+function gsa3
+    git stash apply stash@{3}
 end
 function grhod
-	git reset --hard origin develop
+	git reset --hard origin/develop
 end
 function gc
     git commit -am $argv;
+end
+function gcs
+    git commit -am 'save'
 end
 function gcc
     git commit -m $argv;
@@ -151,6 +166,9 @@ function gdf
 end
 function gdel
 	git branch -D $argv;
+end
+function ga 
+    git add .
 end
 function grf
 	git reset public/JCheckout.js public/JLiteCheckout.js public/index.html src/index.js
