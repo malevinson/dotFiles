@@ -3,6 +3,7 @@ CoenraadS.bracket-pair-colorizer
 PKief.material-icon-theme
 Shan.code-settings-sync
 WallabyJs.quokka-vscode
+Zignd.html-css-class-completion
 alefragnani.project-manager
 asvetliakov.snapshot-tools
 christian-kohler.npm-intellisense
@@ -15,6 +16,7 @@ eg2.vscode-npm-script
 esbenp.prettier-vscode
 formulahendry.auto-close-tag
 formulahendry.auto-rename-tag
+mrmlnc.vscode-scss
 streetsidesoftware.code-spell-checker
 tickleforce.scrolloff
 vscodevim.vim
