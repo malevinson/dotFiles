@@ -1,0 +1,7 @@
+abbr gco2 'git checkout'
+abbr gco 'git checkout'
+abbr gcb 'git checkout -b'
+abbr gr 'git reset'
+abbr gdel 'git branch -D'
+abbr gdf 'git diff'
+abbr gc 'git commit -am'
