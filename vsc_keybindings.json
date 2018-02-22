@@ -1,0 +1,31 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    {
+        "key": "shift+cmd+j",
+        "command": "workbench.action.moveEditorToPreviousGroup"
+    },
+    {
+        "key": "shift+cmd+k",
+        "command": "workbench.action.moveEditorToNextGroup"
+    },
+    {
+        "key": "shift+cmd+7",
+        "command": "workbench.action.closeOtherEditors"
+    },
+    {
+        "key": "shift+cmd+8",
+        "command": "workbench.action.closeEditorsInOtherGroups"
+    },
+    {
+        "key": "shift+cmd+9",
+        "command": "workbench.action.decreaseViewSize"
+    },
+    {
+        "key": "shift+cmd+0",
+        "command": "workbench.action.increaseViewSize"
+    },
+    {
+        "key": "shift+cmd+;",
+        "command": "workbench.action.toggleZenMode"
+    }
+]
