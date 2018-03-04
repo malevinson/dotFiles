@@ -38,3 +38,17 @@ defaults delete com.apple.dock springboard-page-duration
 defaults delete com.apple.finder DisableAllAnimations
 defaults delete com.apple.Mail DisableSendAnimations
 defaults delete com.apple.Mail DisableReplyAnimations
+
+
+
+Mac OS X also has dialog boxes, such as the 'Save As'-box (CMD+SHIFT+S) or the 'Print'-box (CMD+P). You can tweak the speed at which all of these boxes appear by using these commands:
+
+Instant:
+
+defaults write NSGlobalDomain NSWindowResizeTime .001
+Fast:
+
+defaults write NSGlobalDomain NSWindowResizeTime .1
+Default (0.2 seconds):
+
+defaults delete NSGlobalDomain NSWindowResizeTime
