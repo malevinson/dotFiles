@@ -1,19 +1,16 @@
+set -x PATH ~/.local/bin $PATH
+
 function fish_user_key_bindings
     for mode in insert default visual
         bind -M $mode \cf forward-char
     end
 end
-
-set -x PATH ~/.local/bin $PATH
-
 function g
    git $argv;
 end
-
 function gk
    gitk
 end
-
 function sudo
     if test "$argv" = !!
         eval command sudo $history[1]
@@ -21,17 +18,12 @@ function sudo
         command sudo $argv
     end
 end
-
 function ..
     cd ..
 end
-
 function cd..
     cd ..
 end
-
-
-----------#NEW FEB 15TH-----------
 function gcp
     git cherry-pick $argv;
 end
@@ -62,7 +54,25 @@ end
 function gl
     git log
 end
-function gll
+function grc
+    git rebase --continue
+end
+function gra
+    git rebase --abort
+end
+function gmc
+    git merge --continue
+end
+function gma
+    git merge --abort
+end
+function gcpc
+    git cherry-pick --continue
+end
+function gcpa
+    git cherry-pick --abort
+end
+function glf
 	git log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%an]" --decorate --numstat
 end
 function gl1
@@ -79,6 +89,9 @@ function gl4
 end
 function gl5
 	git log --numstat -5
+end
+function gw
+    git show
 end
 function gld
 	git log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%an]" --decorate --date=relative
@@ -108,7 +121,7 @@ function grhom
 	git reset --hard origin/master
 end
 function gpo
-    git push origin HEAD
+    git push origin HEAD $argv
 end
 function gsa1
     git stash apply stash@{1}
@@ -126,9 +139,12 @@ function gc
     git commit -am $argv;
 end
 function gcs
-    git commit -am 'save'
+    git add .; and git commit -m 'save'
 end
-function gcc
+function gch
+    git checkout -p
+end
+function gm
     git commit -m $argv;
 end
 function gcm
@@ -179,9 +195,13 @@ end
 function gam
 	git commit --amend --all $argv;
 end
-#function gas
-#	add . && git stash . - for crap temp files that might get generated
-#end
+function gas
+	git add .; and git stash
+end
 function gr
     git reset $argv; 
 end
+function t
+    tig
+end
+#    git add .; and git commit -m 'save'
