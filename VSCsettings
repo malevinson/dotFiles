@@ -24,7 +24,7 @@
         "statusBar.debuggingBackground": "#268bd2",
         // "editor.foreground": "#42f4c5",
         // "editorCursor.background": "#42f4c5",
-        "editorCursor.foreground": "#fcf800",
+        "editorCursor.foreground": "#42f44e",
         // "editor.selectionHighlightBackground": "#fcf800"
         "editor.lineHighlightBackground": "#471a1e",
         "editorBracketMatch.border": "#01a001"
@@ -61,6 +61,15 @@
     },
     "workbench.colorTheme": "One Dark Pro",
     "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        },
         {
             "before": [
                 "f",
@@ -360,8 +369,11 @@
         {
             "before": [
                 "leader",
-                "j",
-                "l"
+                "d"
+                //a is backup, last char on main line
+                // ""
+                // "j",
+                // "l"
             ],
             "after": [
                 "leader",
@@ -677,4 +689,5 @@
         "suppressNoRepositoryWarning": false,
         "suppressResultsExplorerNotice": true
     },
+    "gitlens.keymap": "alternate",
 }
