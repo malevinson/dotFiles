@@ -204,4 +204,3 @@ end
 function t
     tig
 end
-#    git add .; and git commit -m 'save'
