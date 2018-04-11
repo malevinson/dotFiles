@@ -21,7 +21,7 @@ function sudo
         command sudo $argv
     end
 end
-function ..a
+function ..
     cd ..
 end
 function cd..
