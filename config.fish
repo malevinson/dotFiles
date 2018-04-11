@@ -8,6 +8,9 @@ end
 function g
    git $argv;
 end
+function k
+   gitk
+end
 function gk
    gitk
 end
@@ -18,7 +21,7 @@ function sudo
         command sudo $argv
     end
 end
-function ..
+function ..a
     cd ..
 end
 function cd..
