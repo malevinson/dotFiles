@@ -1,8 +1,7 @@
-gco2	git checkout	Delete
-gco	git checkout	Delete
-gcb	git checkout -b	Delete
-gr	git reset	Delete
-gdel	git branch -D	Delete
-gdf	git diff	Delete
-s	git add . ; and git commit -m "save"	Delete
-grof	git checkout HEAD --
+abbr gco	git checkout
+abbr gcb	git checkout -b
+abbr gr	git reset
+abbr gdel	git branch -D
+abbr gdf	git diff
+abbr s	git add . ; and git commit -m "save"
+abbr grof	git checkout HEAD --
