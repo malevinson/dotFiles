@@ -1,18 +1,20 @@
 {
-	"Print to console": {
-		"prefix": "lg",
-		"body": [
-			"console.log('%c' + '||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||' , 'background: red; color: #83f52c');",
-			"console.log($1)"
-		],
-		"description": "Log output to console"
-	},
-	"Print to node console": {
-		"prefix": "ll",
-		"body": [
-			"console.log('LOG |||||||---------->');",
-			"console.log($1);"
-		],
-		"description": "Log output to console"
-	}
+    "Print to console": {
+        "prefix": "lg",
+        "body": [
+            "console.log('%c' + '||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||' , 'background: red; color: #83f52c');",
+            "console.log($1)"
+        ],
+        "description": "Front end log with color"
+    },
+    "Print to console": {
+        "prefix": "lk",
+        "body": ["console.log($1);"],
+        "description": "Vanilla log"
+    },
+    "Print to node console": {
+        "prefix": "ll",
+        "body": ["console.log('LOG |||||||---------->');", "console.log($1);"],
+        "description": "Back end log"
+    }
 }
