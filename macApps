@@ -9,3 +9,18 @@ left side: shift option j
 right side: shift option k
 left monitor: shift cntrl j
 right monitor: shift cntrl k
+
+
+fisherman (fish settings)
+curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisherman
+then:
+(autocompletion for most used directories)
+fisher z
+(fisher grc colourizer for terminal apps)
+brew install grc;
+(fisher fzf fuzzing finder)
+brew install fzf; 
+
+
+
+fish_update_completions (run this once in a while to make the fish prompt aware of available commands and paramet)
