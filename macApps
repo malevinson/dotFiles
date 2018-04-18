@@ -3,6 +3,7 @@ iterm2
 ranger (brew install ranger)
 spectacle
 fish shell (run fish_config then for terminal style and colors)
+tig 
 
 spectacle settings:
 left side: shift option j
