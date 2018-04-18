@@ -1,6 +1,7 @@
 f.lux
 ranger
 spectacle
+fish shell (run fish_config then for terminal style and colors)
 
 spectacle settings:
 left side: shift option j
