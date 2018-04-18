@@ -24,3 +24,7 @@ brew install fzf; fisher fzf
 
 
 fish_update_completions (run this once in a while to make the fish prompt aware of available commands and paramet)
+
+
+(run in command line to get vi mode)
+fish_vi_key_bindings
