@@ -17,9 +17,9 @@ then:
 (autocompletion for most used directories)
 fisher z
 (fisher grc colourizer for terminal apps)
-brew install grc;
+brew install grc; fisher grc
 (fisher fzf fuzzing finder)
-brew install fzf; 
+brew install fzf; fisher fzf 
 
 
 
