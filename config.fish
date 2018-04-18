@@ -1,4 +1,4 @@
-set -x PATH ~/.local/bin $PATH
+set --export PATH /usr/local/sbin $PATH
 
 function fish_user_key_bindings
     for mode in insert default visual
