@@ -1,0 +1,9 @@
+{
+	"Print to console": {
+		"prefix": "bd",
+		"body": [
+			"border: 0.1rem solid green;"
+		],
+		"description": "Border"
+	}
+}
