@@ -1,9 +1,8 @@
 best:
 https://github.com/nicolashery/mac-dev-setup
 
-
-https://apple.stackexchange.com/questions/14001/how-to-turn-off-all-animations-on-os-x
-
+Space bar in mac dialoag boxes:
+https://superuser.com/questions/473143/how-to-tab-between-buttons-on-an-mac-os-x-dialog-box
 
 defaults write -g NSAutomaticWindowAnimationsEnabled -bool false
 defaults write -g NSScrollAnimationEnabled -bool false
