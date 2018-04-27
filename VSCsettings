@@ -40,6 +40,7 @@
     "vim.searchHighlightColor": "rgba(250, 250, 250, 0.3)",
     "prettier.singleQuote": true,
     "prettier.proseWrap": true,
+    "prettier.printWidth": 120,
     "prettier.tabWidth": 4,
     "vim.substituteGlobalFlag": true,
     "vim.cursorStylePerMode": {
