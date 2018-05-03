@@ -89,3 +89,10 @@ LastPass
 Vimium
 Json View
 React dev tools
+
+
+Cant get this to work in any place: (~/.config/fish/config.fish) etc
+function fish_user_key_bindings
+Bind /ek Nextd-or-forward-word
+end
+
