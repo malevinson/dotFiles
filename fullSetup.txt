@@ -67,6 +67,12 @@ And finally, install the Vim "sensible defaults" by running:
 $ cd ~/.vim/bundle
 $ git clone git://github.com/tpope/vim-sensible.git
  
+ 
+Heroku
+brew install heroku/brew/heroku
+
+ 
+ 
 System preferences
 Set screen auto dimming of
 Trackpad > Tap to click
