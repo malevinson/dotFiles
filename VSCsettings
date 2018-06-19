@@ -11,13 +11,11 @@
     },
     "zenMode.hideStatusBar": false,
     "window.zoomLevel": 0,
+    "editor.fontSize": 11,
     "material-icon-theme.showUpdateMessage": false,
     "editor.formatOnSave": true,
-    //"editor.fontFamily": "Hack",
-    // "indenticator.showHover": true,
+    "editor.snippetSuggestions": "top",
     "vim.overrideCopy": false,
-    // "indenticator.hover.peekBack": 1,
-    // "indenticator.hover.peekForward": 0,
     "workbench.colorCustomizations": {
         "statusBar.background": "#268bd2",
         "statusBar.noFolderBackground": "#268bd2",
@@ -41,6 +39,7 @@
     "prettier.singleQuote": true,
     "prettier.proseWrap": true,
     "prettier.printWidth": 120,
+    "prettier.trailingComma": "all",
     "prettier.tabWidth": 4,
     "vim.substituteGlobalFlag": true,
     "vim.cursorStylePerMode": {
@@ -50,16 +49,12 @@
     },
     "editor.wordWrap": "on",
     "vim.leader": "<space>",
-    // "scrolloff.alwaysCenter": true,
     "vim.handleKeys": {
         // "<C-a>": false,
         // "<C-f>": false
     },
     "editor.minimap.enabled": false,
     "workbench.iconTheme": "material-icon-theme",
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact"
-    },
     "workbench.colorTheme": "One Dark Pro",
     "vim.insertModeKeyBindings": [
         {
@@ -95,19 +90,6 @@
                 }
             ]
         },
-        // {
-        //     "before": [
-        //         "<leader>",
-        //         "'"
-        //     ],
-        //     "after": [],
-        //     "commands": [
-        //         {
-        //             "command": "workbench.action.terminal.toggleTerminal",
-        //             "args": []
-        //         }
-        //     ]
-        // },
         {
             "before": [
                 "<leader>",
@@ -680,5 +662,6 @@
         "suppressResultsExplorerNotice": true,
         "suppressShowKeyBindingsNotice": true
     },
-    "gitlens.keymap": "none"
+    "gitlens.keymap": "none",
+    "gitlens.historyExplorer.enabled": true
 }
