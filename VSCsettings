@@ -1,5 +1,14 @@
 {
     "vim.easymotion": true,
+    "vim.easymotionMarkerBackgroundColor": "#471a1e",
+    // "vim.easymotionMarkerXOffset": 8,
+    "vim.easymotionMarkerYOffset": 4,
+    "vim.easymotionMarkerFontSize": "19",
+    "vim.easymotionMarkerFontWeight": "bold",
+    // "vim.easymotionMarkerHeight": 15,
+    // "vim.easymotionMarkerWidthPerChar": 7,
+    // "vim.easymotionMarkerForegroundColorOneChar": "yellow",
+    "vim.easymotionMarkerForegroundColorTwoChar": "yellow",
     "workbench.activityBar.visible": true,
     "search.exclude": {
         "**/node_modules": true,
@@ -10,9 +19,9 @@
         "repos": true
     },
     "zenMode.hideStatusBar": false,
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "editor.fontSize": 11,
-    "material-icon-theme.showUpdateMessage": false,
+    // "material-icon-theme.showUpdateMessage": false,
     "editor.formatOnSave": true,
     "editor.snippetSuggestions": "top",
     "vim.overrideCopy": false,
@@ -76,7 +85,7 @@
             ]
         }
     ],
-    "vim.otherModesKeyBindingsNonRecursive": [
+    "vim.normalModeKeyBindingsNonRecursive": [
         {
             "before": [
                 "<leader>",
