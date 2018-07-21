@@ -5,6 +5,8 @@
     "vim.easymotionMarkerYOffset": 4,
     "vim.easymotionMarkerFontSize": "19",
     "vim.easymotionMarkerFontWeight": "bold",
+    "vim.easymotionMarkerFontFamily": "'DejaVu Mono', 'monospace'",
+    // "editor.fontFamily": "'DejaVu Mono', 'monospace'",
     // "vim.easymotionMarkerHeight": 15,
     // "vim.easymotionMarkerWidthPerChar": 7,
     // "vim.easymotionMarkerForegroundColorOneChar": "yellow",
@@ -19,7 +21,7 @@
         "repos": true
     },
     "zenMode.hideStatusBar": false,
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 0,
     "editor.fontSize": 11,
     // "material-icon-theme.showUpdateMessage": false,
     "editor.formatOnSave": true,
@@ -82,6 +84,34 @@
             ],
             "after": [
                 "<Esc>"
+            ]
+        }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<C-d>"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.files.save"
+                },
+                {
+                    "command": "extension.vim_escape"
+                }
+            ]
+        },
+        {
+            "before": [
+                "<C-n>"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.files.save"
+                },
+                {
+                    "command": "extension.vim_escape"
+                }
             ]
         }
     ],
@@ -672,5 +702,6 @@
         "suppressShowKeyBindingsNotice": true
     },
     "gitlens.keymap": "none",
-    "gitlens.historyExplorer.enabled": true
+    "gitlens.historyExplorer.enabled": true,
+    "javascript.updateImportsOnFileMove.enabled": "always"
 }
