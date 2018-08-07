@@ -2,6 +2,24 @@ f.lux
 iterm2
 ranger (brew install ranger)
 spectacle
+
+---------------------------------------
+FISH:
+brew install fish
+
+(open with sudo vi etc/shells):
+You will need to add:
+/usr/local/bin/fish
+to /etc/shells.
+
+config locatino:
+~/.config/fish/config.fish
+
+prompt:
+~/.config/fish/functions/fish_prompt.fish
+---------------------------------------
+
+
 fish shell (run fish_config then for terminal style and colors)
 tig (brew install tig)
 
