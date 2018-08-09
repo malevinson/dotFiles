@@ -3,6 +3,8 @@ iterm2
 ranger (brew install ranger)
 spectacle
 
+react and redux dev tools
+
 ---------------------------------------
 FISH:
 brew install fish
