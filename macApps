@@ -19,6 +19,18 @@ prompt:
 ~/.config/fish/functions/fish_prompt.fish
 ---------------------------------------
 
+CHANGE  SHELLS
+
+
+chsh -s /usr/local/bin/fish . or /bin/fish ??
+
+change shell to bash, from root
+/bin/bash
+
+
+
+---------------------------------------
+
 
 fish shell (run fish_config then for terminal style and colors)
 tig (brew install tig)
