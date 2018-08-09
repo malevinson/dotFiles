@@ -19,6 +19,11 @@ config locatino:
 
 prompt:
 ~/.config/fish/functions/fish_prompt.fish
+
+
+
+
+Startup (Where's .bashrc?) fish starts by executing commands in ~/.config/fish/config.fish. You can create it if it does not exist.
 ---------------------------------------
 
 CHANGE  SHELLS
