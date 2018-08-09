@@ -1,3 +1,24 @@
+first:
+Bash Autocomplete:
+
+brew install bash-completion
+brew tap homebrew/completions
+
+After you run that first command, in typical brew fashion, it will request that you add the following tidbit to your ~/.bash_profile. Don’t forget this part. It’s critical!
+
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+. $(brew --prefix)/etc/bash_completion
+fi
+Once you’ve done this, you’ll be able to install the additional completion scripts. You can find a complete list of these over here on GitHub. Happy tabbing!
+(https://github.com/Homebrew/homebrew-core)
+http://davidalger.com/development/bash-completion-on-os-x-with-brew/
+
+
+
+
+
+
+
 f.lux
 iterm2
 ranger (brew install ranger)
