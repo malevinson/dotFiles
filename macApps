@@ -30,6 +30,8 @@ https://github.com/zsh-users/zsh-history-substring-search   -up / down arrows to
 install powerline fonts. then add from iterm, profiles, text, change font (?/? should become arrows)
 react and redux dev tools
 
+https://github.com/hholtmann/smcFanControl
+
 ---------------------------------------
 FISH:
 brew install fish
