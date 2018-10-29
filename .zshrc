@@ -1,14 +1,8 @@
-# FEATURES I HAVE:
-#syntax highlighting
-#auto complete
-#auto execute
-
-
-
-
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+
+DEFAULT_USER=$USER
 
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/share/npm/bin:$PATH"
@@ -16,8 +10,9 @@ eval "$(rbenv init -)"
 export NVM_DIR=/Users/mlevinson/.nvm
 source /usr/local/opt/nvm/nvm.sh
 
-source "$HOME/.antigen/antigen.zsh"
-
+alias cpyml='git cherry-pick yml'
+alias ts='tig status'
+alias nv='--no-verify'
 alias gco='git checkout'
 alias gcb='git checkout -b'
 alias gr='git reset'
@@ -25,10 +20,12 @@ alias gdel='git branch -D'
 alias gdf='git diff'
 alias grof='git checkout HEAD --'
 alias s='git add . && git commit -m "save"'
+alias sv='git add . && git commit --no-verify -m "save - (NOT VERIFIED)"'
 alias g='git'
 alias k='gitk'
 alias gcp='git cherry-pick'
 alias gsh='git stash'
+alias gash='git stash -k -u'
 alias gshp='git stash pop'
 alias gsl='git stash list'
 alias gsa='git stash apply'
@@ -55,8 +52,9 @@ alias gpod='git pull origin develop'
 alias gpom='git pull origin master'
 alias gpl='git pull'
 alias gpo='git push origin'
-alias gfa='git fetch -all'
+alias gfa='git fetch --all'
 alias grhom='git reset --hard origin/master'
+alias grho='git reset --hard origin/'
 alias gpo='git push origin HEAD'
 alias gsa1='git stash apply stash@{1}'
 alias gsa2='git stash apply stash@{2}'
@@ -71,10 +69,12 @@ alias grh2='git reset HEAD~2'
 alias grh3='git reset HEAD~3'
 alias gdf='git diff'
 alias ga='git add .'
-alias gam='git commit --amend --all'
+alias gca='git commit --amend '
 alias gas='git add . && git stash'
 alias gr='git reset'
 alias t='tig'
+alias cv="git commit --no-verify -m 'save - (NOT VERIFIED)'"
+alias gb='git branch'
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/mlevinson/.oh-my-zsh"
@@ -133,8 +133,8 @@ ZSH_THEME="agnoster"
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
 ZSH_AUTOSUGGEST_STRATEGY=match_prev_cmd
-bindkey '^ ' autosuggest-execute
-bindkey '^\' autosuggest-accept
+# bindkey '^ ' autosuggest-execute
+bindkey '^\' autosuggest-execute
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -178,4 +178,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /Users/mlevinson/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
