@@ -30,6 +30,7 @@ command option A - alert when done with iterm processes. first: curl -L https://
 https://github.com/zsh-users/zsh-history-substring-search   -up / down arrows to search command history that current text matches
 install powerline fonts. then add from iterm, profiles, text, change font (?/? should become arrows)
 react and redux dev tools
+https://www.cockos.com/licecap/  - gifs for videos/QA testing
 
 https://github.com/hholtmann/smcFanControl
 
