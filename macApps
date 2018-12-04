@@ -14,6 +14,8 @@ Once you’ve done this, you’ll be able to install the additional completion s
 http://davidalger.com/development/bash-completion-on-os-x-with-brew/
 
 
+slack dark mode (in terminal):
+echo 'document.addEventListener("DOMContentLoaded", function() {$.ajax({url: "https://cdn.rawgit.com/laCour/slack-night-mode/master/css/raw/black.css",success: function(css) {let overrides = "code { background-color: #535353; color: #85c5ff; } .c-mrkdwn__pre, .c-mrkdwn__quote { background: #535353 !important; background-color: #535353 !important; }"; $("<style></style>").appendTo("head").html(css + overrides);}});});' | sudo tee -a /Applications/Slack.app/Contents/Resources/app.asar.unpacked/src/static/ssb-interop.js
 
 
 CLUT extension. - change prev/next to alt/option 1 & 2
