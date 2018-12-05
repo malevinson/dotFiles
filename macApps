@@ -1,3 +1,7 @@
+after clean VSC install with Vim. see if these work first to see what extension or setting is breaking these:
+(ctrl i/o, g; g, ``)
+
+
 first:
 Bash Autocomplete:
 
