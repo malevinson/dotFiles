@@ -1,18 +1,30 @@
-Atishay-Jain.All-Autocomplete
-CoenraadS.bracket-pair-colorizer
-Zignd.html-css-class-completion
+to generate list:
+command + shift + p
+type: Shell Command: Install 'code'  - press enter
+in terminal:
+`code --list-extensions`
+
+
 alefragnani.project-manager
+Atishay-Jain.All-Autocomplete
 christian-kohler.npm-intellisense
 christian-kohler.path-intellisense
+CoenraadS.bracket-pair-colorizer-2
+dbaeumer.vscode-eslint
 eamodio.gitlens
 eg2.vscode-npm-script
-prettier
-one-dark-pro
+esbenp.prettier-vscode
 formulahendry.auto-close-tag
 formulahendry.auto-rename-tag
+jpoissonnier.vscode-styled-components
+mblode.twig-language-2
+mikestead.dotenv
 mrmlnc.vscode-scss
+msjsdiag.debugger-for-chrome
+PKief.material-icon-theme
 tickleforce.scrolloff
+traBpUkciP.vscode-npm-scripts
 vscodevim.vim
-vscode style components
-material icon themes
-debugger for chrome
+wangkechun.html-less-class-completion
+whatwedo.twig
+zhuangtongfa.Material-theme
