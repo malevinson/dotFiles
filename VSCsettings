@@ -109,24 +109,14 @@
             ]
         }
     ],
-
-    // "vim.otherModesKeyBindings": [
-    //     {
-    //        want to fix easy motion here but no visual mode support??
-    //     }
-    // ],
+    //this works even though shows linter warning
     "vim.otherModesKeyBindingsNonRecursive": [
         //JUMP TO LINE:
         {
+            // in visual mode, somehow this maps to: leader leader k
             "before": ["leader", "d"],
-            // "after": ["leader", "d"]
-            "after": ["leader", "leader", "leader", "b", "d", "j", "k"]
-        },
-        //JUMP TO WORD:
-        {
-            "before": ["leader", "k"],
-            // "after": ["leader", "k"]
-            "after": ["leader", "leader", "leader", "b", "d", "w"]
+            // in visual mode, this maps to: leader leader j
+            "after": ["leader", "leader", "j"]
         }
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
@@ -204,6 +194,7 @@
         {
             "before": ["leader", "d"],
             // "after": ["leader", "d"]
+            // "after": ["leader", "leader", "j"]
             "after": ["leader", "leader", "leader", "b", "d", "j", "k"]
         },
         //JUMP TO WORD:
