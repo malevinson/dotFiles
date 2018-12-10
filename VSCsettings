@@ -1,16 +1,13 @@
 {
     "vim.easymotion": true,
     "vim.easymotionMarkerBackgroundColor": "#471a1e",
-    "flow.runOnEdit": false,
-    // "vim.easymotionMarkerXOffset": 8,
     "vim.easymotionMarkerYOffset": 4,
     // "vim.easymotionMarkerHeight": 19,
     "vim.easymotionMarkerFontSize": "19",
     "vim.easymotionMarkerFontWeight": "bold",
     "vim.easymotionMarkerFontFamily": "'DejaVu Mono', 'monospace'",
     // "editor.fontFamily": "'DejaVu Mono', 'monospace'",
-    // "vim.easymotionMarkerHeight": 15,
-    // "vim.easymotionMarkerWidthPerChar": 7,
+    // "vim.easymotionMarkerWidthPerChar": 19,
     // "vim.easymotionMarkerForegroundColorOneChar": "yellow",
     "vim.easymotionMarkerForegroundColorTwoChar": "yellow",
     "workbench.activityBar.visible": true,
@@ -112,6 +109,26 @@
             ]
         }
     ],
+
+    // "vim.otherModesKeyBindings": [
+    //     {
+    //        want to fix easy motion here but no visual mode support??
+    //     }
+    // ],
+    "vim.otherModesKeyBindingsNonRecursive": [
+        //JUMP TO LINE:
+        {
+            "before": ["leader", "d"],
+            // "after": ["leader", "d"]
+            "after": ["leader", "leader", "leader", "b", "d", "j", "k"]
+        },
+        //JUMP TO WORD:
+        {
+            "before": ["leader", "k"],
+            // "after": ["leader", "k"]
+            "after": ["leader", "leader", "leader", "b", "d", "w"]
+        }
+    ],
     "vim.normalModeKeyBindingsNonRecursive": [
         {
             "before": ["<leader>", "<space>"],
@@ -133,58 +150,6 @@
                 }
             ]
         },
-        // {
-        //     "before": [
-        //         "<leader>",
-        //         "/"
-        //     ],
-        //     "after": [],
-        //     "commands": [
-        //         {
-        //             "command": "workbench.action.findInFiles",
-        //             "args": []
-        //         }
-        //     ]
-        // },
-        // {
-        //     "before": [
-        //         "<leader>",
-        //         "1"
-        //     ],
-        //     "after": [],
-        //     "commands": [
-        //         {
-        //             "command": "workbench.action.focusFirstEditorGroup",
-        //             "args": []
-        //         }
-        //     ]
-        // },
-        // {
-        //     "before": [
-        //         "<leader>",
-        //         "2"
-        //     ],
-        //     "after": [],
-        //     "commands": [
-        //         {
-        //             "command": "workbench.action.focusSecondEditorGroup",
-        //             "args": []
-        //         }
-        //     ]
-        // },
-        // {
-        //     "before": [
-        //         "<leader>",
-        //         "3"
-        //     ],
-        //     "after": [],
-        //     "commands": [
-        //         {
-        //             "command": "workbench.action.focusThirdEditorGroup",
-        //             "args": []
-        //         }
-        //     ]
-        // },
         {
             "before": ["<leader>", "s", "f"],
             "after": [],
@@ -195,76 +160,6 @@
                 }
             ]
         },
-        // {
-        //     "before": [
-        //         "<leader>",
-        //         "b",
-        //         "d"
-        //     ],
-        //     "after": [],
-        //     "commands": [
-        //         {
-        //             "command": "workbench.action.closeActiveEditor",
-        //             "args": []
-        //         }
-        //     ]
-        // },
-        // {
-        //     "before": [
-        //         "<leader>",
-        //         "b",
-        //         "n"
-        //     ],
-        //     "after": [],
-        //     "commands": [
-        //         {
-        //             "command": "workbench.action.nextEditor",
-        //             "args": []
-        //         }
-        //     ]
-        // },
-        // {
-        //     "before": [
-        //         "<leader>",
-        //         "b",
-        //         "p"
-        //     ],
-        //     "after": [],
-        //     "commands": [
-        //         {
-        //             "command": "workbench.action.previousEditor",
-        //             "args": []
-        //         }
-        //     ]
-        // },
-        // {
-        //     "before": [
-        //         "<leader>",
-        //         "e",
-        //         "l"
-        //     ],
-        //     "after": [],
-        //     "commands": [
-        //         {
-        //             "command": "workbench.actions.view.problems",
-        //             "args": []
-        //         }
-        //     ]
-        // },
-        // {
-        //     "before": [
-        //         "<leader>",
-        //         "f",
-        //         "e"
-        //     ],
-        //     "after": [],
-        //     "commands": [
-        //         {
-        //             "command": "workbench.action.openGlobalSettings",
-        //             "args": []
-        //         }
-        //     ]
-        // },
         {
             "before": ["<leader>", "f", "f"],
             "after": [],
@@ -281,31 +176,6 @@
             "commands": [
                 {
                     "command": "workbench.action.openRecent",
-                    "args": []
-                }
-            ]
-        },
-        // {
-        //     "before": [
-        //         "<leader>",
-        //         "f",
-        //         "s"
-        //     ],
-        //     "after": [],
-        //     "commands": [
-        //         {
-        //             "command": "workbench.action.files.save",
-        //             "args": []
-        //         }
-        //     ]
-        // },
-        //VIM LIKE FOLDER TREE NAVIGATION!!!!:
-        {
-            "before": ["<leader>", "f", "t"],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.view.explorer",
                     "args": []
                 }
             ]
@@ -330,40 +200,16 @@
                 }
             ]
         },
-        // {
-        //     "before": [
-        //         "<leader>",
-        //         "j",
-        //         "="
-        //     ],
-        //     "after": [],
-        //     "commands": [
-        //         {
-        //             "command": "editor.action.formatDocument",
-        //             "args": []
-        //         }
-        //     ]
-        // },
-        // {
-        //     "before": [
-        //         "leader",
-        //         "j",
-        //         "j"
-        //     ],
-        //     "after": [
-        //         "leader",
-        //         "leader",
-        //         "s"
-        //     ]
-        // },
         //JUMP TO LINE:
         {
             "before": ["leader", "d"],
+            // "after": ["leader", "d"]
             "after": ["leader", "leader", "leader", "b", "d", "j", "k"]
         },
         //JUMP TO WORD:
         {
             "before": ["leader", "k"],
+            // "after": ["leader", "k"]
             "after": ["leader", "leader", "leader", "b", "d", "w"]
         },
         {
@@ -377,7 +223,7 @@
             ]
         },
         {
-            "before": ["<leader>", "p", "f"],
+            "before": ["<leader>", "o", "r"],
             "after": [],
             "commands": [
                 {
@@ -406,20 +252,6 @@
                 }
             ]
         },
-        // {
-        //     "before": [
-        //         "<leader>",
-        //         "q",
-        //         "f"
-        //     ],
-        //     "after": [],
-        //     "commands": [
-        //         {
-        //             "command": "workbench.action.closeWindow",
-        //             "args": []
-        //         }
-        //     ]
-        // },
         {
             "before": ["<leader>", "q", "r"],
             "after": [],
@@ -550,26 +382,6 @@
                 }
             ]
         }
-        // {
-        //     "before": ["<leader>", "w", "w"],
-        //     "after": [],
-        //     "commands": [
-        //         {
-        //             "command": "workbench.action.focusNextGroup",
-        //             "args": []
-        //         }
-        //     ]
-        // },
-        // {
-        //     "before": ["<leader>", "w", "W"],
-        //     "after": [],
-        //     "commands": [
-        //         {
-        //             "command": "workbench.action.focusPreviousGroup",
-        //             "args": []
-        //         }
-        //     ]
-        // }
     ],
     "gitlens.advanced.messages": {
         "suppressCommitHasNoPreviousCommitWarning": false,
@@ -582,7 +394,6 @@
         "suppressShowKeyBindingsNotice": true
     },
     "gitlens.keymap": "none",
-    "gitlens.historyExplorer.enabled": true,
     "javascript.updateImportsOnFileMove.enabled": "always",
     "gitlens.views.fileHistory.enabled": true,
     "gitlens.views.lineHistory.enabled": true,
