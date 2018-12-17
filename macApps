@@ -23,6 +23,7 @@ echo 'document.addEventListener("DOMContentLoaded", function() {$.ajax({url: "ht
 
 
 CLUT extension. - change prev/next to alt/option 1 & 2
+chrome extension: crxmouse: for back/forward (right click and hold left/right)
 
 
 f.lux
