@@ -1,39 +1,31 @@
 {
-	"Print to console": {
-		"prefix": "lg",
-		"body": [
-			"console.log('%c' + '||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||' , 'background: red; color: #83f52c');",
-			"console.log($1)"
-		],
-		"description": "Front end log with color"
-	},
-	"Print to console": {
-		"prefix": "ld",
-		"body": [
-			"console.log($1);"
-		],
-		"description": "Vanilla log"
-	},
-	"Print to node console": {
-		"prefix": "ll",
-		"body": [
-			"console.log('LOG |||||||---------->');",
-			"console.log($1);"
-		],
-		"description": "Back end log"
-	},
-	"Print to console": {
-		"prefix": "bd",
-		"body": [
-			"border: 0.1rem solid green;"
-		],
-		"description": "Border"
-	},
-	"Print to console": {
-		"prefix": "lk",
-		"body": [
-			"console.log({$1})"
-		],
-		"description": "Border"
-	}
+    "Print to console lg": {
+        "prefix": "lg",
+        "body": ["console.log('%c %s', 'background: #f4427a; color: white', '$1');"],
+        "description": "Front end log with color"
+    },
+    "Print to console ld": {
+        "prefix": "ld",
+        "body": ["console.log($1);"],
+        "description": "Vanilla log"
+    },
+    "Print to node console ll": {
+        "prefix": "ll",
+        "body": ["console.log('LOG |||||||---------->');", "console.log($1);"],
+        "description": "Back end log"
+    },
+    "Print to console bd": {
+        "prefix": "bd",
+        "body": ["border: 0.1rem solid green;"],
+        "description": "Border"
+    },
+    "Print to console lk": {
+        "prefix": "lk",
+        "body": ["console.log('%c %s', 'background: #0d7200; color: white', {$1})"],
+        "description": "Border"
+    },
+    "Print to console ls": {
+        "prefix": "ls",
+        "body": ["console.log(JSON.stringify($1))"]
+    }
 }
