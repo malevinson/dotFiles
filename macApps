@@ -26,6 +26,11 @@ CLUT extension. - change prev/next to alt/option 1 & 2
 chrome extension: crxmouse: for back/forward (right click and hold left/right)
 
 
+git config --global pager.branch false
+git branch in vim (to copy easier) 1 - brew install vim --with-client-server . then  in ~/.vimrc . 2 -  set clipboard=unnamed .   3 - use: git branch | vim -  (add as alias gbv) .  exit vim: shift + Z + Q - from normal mode ---use right shift so easier
+alias cb="git branch | grep '^\*' | cut -d' ' -f2 | pbcopy"          -copy branch name to clipboard
+
+
 f.lux
 iterm2
 ranger (brew install ranger)
