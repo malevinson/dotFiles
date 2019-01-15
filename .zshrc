@@ -4,12 +4,20 @@
 
 DEFAULT_USER=$USER
 
+export PATH="$PATH:/opt/yarn-[1.12.3]/bin"
+export PATH="$PATH:`yarn global bin`"
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/share/npm/bin:$PATH"
 eval "$(rbenv init -)"
 export NVM_DIR=/Users/mlevinson/.nvm
 source /usr/local/opt/nvm/nvm.sh
 
+alias gsv="git status | vim -"
+alias cb="git branch | grep '^\*' | cut -d' ' -f2 | pbcopy"
+alias gbv="git branch | vim -"
+alias gd='git diff'
+alias gp='git pull'
+alias gap='git add -p'
 alias cpyml='git cherry-pick yml'
 alias ts='tig status'
 alias nv='--no-verify'
@@ -20,7 +28,7 @@ alias gdel='git branch -D'
 alias gdf='git diff'
 alias grof='git checkout HEAD --'
 alias s='git add . && git commit -m "save"'
-alias sv='git add . && git commit --no-verify -m "save - (NOT VERIFIED)"'
+alias sv='git add . && git commit --no-verify -m "save"'
 alias g='git'
 alias k='gitk'
 alias gcp='git cherry-pick'
@@ -67,13 +75,19 @@ alias gcod='git checkout develop'
 alias grh='git reset HEAD~'
 alias grh2='git reset HEAD~2'
 alias grh3='git reset HEAD~3'
+alias grh4='git reset HEAD~4'
+alias grh5='git reset HEAD~5'
+alias grh6='git reset HEAD~6'
+alias grh7='git reset HEAD~7'
+alias grh8='git reset HEAD~8'
+alias grh9='git reset HEAD~9'
 alias gdf='git diff'
 alias ga='git add .'
 alias gca='git commit --amend '
 alias gas='git add . && git stash'
 alias gr='git reset'
 alias t='tig'
-alias cv="git commit --no-verify -m 'save - (NOT VERIFIED)'"
+alias cv="git commit --no-verify -m 'save'"
 alias gb='git branch'
 
 # Path to your oh-my-zsh installation.
@@ -181,3 +195,9 @@ source /Users/mlevinson/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/mlevinson/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/mlevinson/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/mlevinson/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/mlevinson/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
