@@ -1,15 +1,13 @@
-after clean VSC install with Vim. see if these work first to see what extension or setting is breaking these:
-(ctrl i/o, g; g, ``)
+homebrew
 
 
-first:
-Bash Autocomplete:
 
+
+BashAutocomplete:
 brew install bash-completion
 brew tap homebrew/completions
 
 After you run that first command, in typical brew fashion, it will request that you add the following tidbit to your ~/.bash_profile. Don’t forget this part. It’s critical!
-
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
 . $(brew --prefix)/etc/bash_completion
 fi
@@ -18,72 +16,44 @@ Once you’ve done this, you’ll be able to install the additional completion s
 http://davidalger.com/development/bash-completion-on-os-x-with-brew/
 
 
+
+
 slack dark mode (in terminal):
 echo 'document.addEventListener("DOMContentLoaded", function() {$.ajax({url: "https://cdn.rawgit.com/laCour/slack-night-mode/master/css/raw/black.css",success: function(css) {let overrides = "code { background-color: #535353; color: #85c5ff; } .c-mrkdwn__pre, .c-mrkdwn__quote { background: #535353 !important; background-color: #535353 !important; }"; $("<style></style>").appendTo("head").html(css + overrides);}});});' | sudo tee -a /Applications/Slack.app/Contents/Resources/app.asar.unpacked/src/static/ssb-interop.js
 
 
-CLUT extension. - change prev/next to alt/option 1 & 2
-chrome extension: crxmouse: for back/forward (right click and hold left/right)
 
+
+view and copy git branch names easier:
 
 git config --global pager.branch false
-git branch in vim (to copy easier) 1 - brew install vim --with-client-server . then  in ~/.vimrc . 2 -  set clipboard=unnamed .   3 - use: git branch | vim -  (add as alias gbv) .  exit vim: shift + Z + Q - from normal mode ---use right shift so easier
-alias cb="git branch | grep '^\*' | cut -d' ' -f2 | pbcopy"          -copy branch name to clipboard
+1: brew install vim --with-client-server        2: in ~/.vimrc set clipboard=unnamed   3:  git branch | vim -  (added as alias gbv) .  exit vim: shift + Z + Q
 then to ignore .swp files globally: https://stackoverflow.com/questions/4824188/git-ignore-vim-temporary-files
+ 
 
-oplao - chrome weather extension
 
 
 f.lux
-iterm2
+iterm2 - set opacity in profile (not display) to 30% transparent
 ranger (brew install ranger)
 spectacle
 Weather Widget Desktop -taskbar temperature            
 itsycal
-github.com/philc/sheetkeys
+
 command option A - alert when done with iterm processes. first: curl -L https://iterm2.com/misc/install_shell_integration.sh | bash .    then source ~/.iterm2_shell_integration.zsh
 https://github.com/zsh-users/zsh-history-substring-search   -up / down arrows to search command history that current text matches
 install powerline fonts. then add from iterm, profiles, text, change font (?/? should become arrows)
-react and redux dev tools
 https://www.cockos.com/licecap/  - gifs for videos/QA testing
-
 https://github.com/hholtmann/smcFanControl
 
----------------------------------------
-FISH:
-brew install fish
-
-(open with sudo vi etc/shells):
-You will need to add:
-/usr/local/bin/fish
-to /etc/shells.
-
-config locatino:
-~/.config/fish/config.fish
-
-prompt:
-~/.config/fish/functions/fish_prompt.fish
 
 
 
-
-Startup (Where's .bashrc?) fish starts by executing commands in ~/.config/fish/config.fish. You can create it if it does not exist.
----------------------------------------
-
-CHANGE  SHELLS
-
-
-chsh -s /usr/local/bin/fish . or /bin/fish ??
-
-change shell to bash, from root
-/bin/bash
 
 
 
 ---------------------------------------
 
-
-fish shell (run fish_config then for terminal style and colors)
 tig (brew install tig)
 
 spectacle settings:
@@ -92,21 +62,3 @@ right side: shift option k
 left monitor: shift cntrl j
 right monitor: shift cntrl k
 
-
-fisherman (fish settings)
-curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisherman
-then:
-(autocompletion for most used directories)
-fisher z
-(fisher grc colourizer for terminal apps)
-brew install grc; fisher grc
-(fisher fzf fuzzing finder)
-brew install fzf; fisher fzf 
-
-
-
-fish_update_completions (run this once in a while to make the fish prompt aware of available commands and paramet)
-
-
-(run in command line to get vi mode)
-fish_vi_key_bindings
