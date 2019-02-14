@@ -5,6 +5,7 @@
 DEFAULT_USER=$USER
 
 export PATH="$PATH:/opt/yarn-[1.12.3]/bin"
+export PATH="/opt/gradle/gradle-4-10.3/bin:$PATH"
 export PATH="$PATH:`yarn global bin`"
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/share/npm/bin:$PATH"
@@ -28,7 +29,6 @@ alias gdel='git branch -D'
 alias gdf='git diff'
 alias grof='git checkout HEAD --'
 alias s='git add . && git commit -m "save"'
-alias sv='git add . && git commit --no-verify -m "save"'
 alias g='git'
 alias k='gitk'
 alias gcp='git cherry-pick'
@@ -67,9 +67,6 @@ alias gpo='git push origin HEAD'
 alias gsa1='git stash apply stash@{1}'
 alias gsa2='git stash apply stash@{2}'
 alias grhod='git reset --hard origin/develop'
-alias gc='git commit -am'
-alias gch='git checkout -p'
-alias gm='git commit -m'
 alias gcm='git checkout master'
 alias gcod='git checkout develop'
 alias grh='git reset HEAD~'
@@ -87,8 +84,13 @@ alias gca='git commit --amend '
 alias gas='git add . && git stash'
 alias gr='git reset'
 alias t='tig'
-alias cv="git commit --no-verify -m 'save'"
 alias gb='git branch'
+alias gch='git checkout -p'
+
+alias cv="git commit --no-verify -m 'save'"
+alias sv='git add . && git commit --no-verify -m "save"'
+alias gc='git commit -am'
+alias gm='git commit -m'
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/mlevinson/.oh-my-zsh"
@@ -201,3 +203,5 @@ if [ -f '/Users/mlevinson/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/U
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/mlevinson/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/mlevinson/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+export PATH="/usr/local/opt/php@7.2/bin:$PATH"
+export PATH="/usr/local/opt/php@7.2/sbin:$PATH"
