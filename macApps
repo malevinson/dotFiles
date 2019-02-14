@@ -31,6 +31,8 @@ git branch in vim (to copy easier) 1 - brew install vim --with-client-server . t
 alias cb="git branch | grep '^\*' | cut -d' ' -f2 | pbcopy"          -copy branch name to clipboard
 then to ignore .swp files globally: https://stackoverflow.com/questions/4824188/git-ignore-vim-temporary-files
 
+oplao - chrome weather extension
+
 
 f.lux
 iterm2
