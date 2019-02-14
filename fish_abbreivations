@@ -1,7 +1,0 @@
-abbr gco	git checkout
-abbr gcb	git checkout -b
-abbr gr	git reset
-abbr gdel	git branch -D
-abbr gdf	git diff
-abbr s	git add . ; and git commit -m "save"
-abbr grof	git checkout HEAD --
