@@ -1,6 +1,10 @@
 homebrew
-
-
+f.lux
+iterm2 - set opacity in profile (not display) to 30% transparent
+ranger (brew install ranger)
+spectacle
+Weather Widget Desktop -taskbar temperature            
+itsycal
 
 
 BashAutocomplete:
@@ -14,6 +18,10 @@ fi
 Once you’ve done this, you’ll be able to install the additional completion scripts. You can find a complete list of these over here on GitHub. Happy tabbing!
 (https://github.com/Homebrew/homebrew-core)
 http://davidalger.com/development/bash-completion-on-os-x-with-brew/
+
+
+https://github.com/zsh-users/zsh-history-substring-search   -up / down arrows to search command history that current text matches
+
 
 
 
@@ -33,26 +41,13 @@ then to ignore .swp files globally: https://stackoverflow.com/questions/4824188/
 
 
 
-f.lux
-iterm2 - set opacity in profile (not display) to 30% transparent
-ranger (brew install ranger)
-spectacle
-Weather Widget Desktop -taskbar temperature            
-itsycal
 
-command option A - alert when done with iterm processes. first: curl -L https://iterm2.com/misc/install_shell_integration.sh | bash .    then source ~/.iterm2_shell_integration.zsh
-https://github.com/zsh-users/zsh-history-substring-search   -up / down arrows to search command history that current text matches
+iterm2: command option A - alert when done with iterm processes. first: curl -L https://iterm2.com/misc/install_shell_integration.sh | bash .    then source ~/.iterm2_shell_integration.zsh
 install powerline fonts. then add from iterm, profiles, text, change font (?/? should become arrows)
 https://www.cockos.com/licecap/  - gifs for videos/QA testing
 https://github.com/hholtmann/smcFanControl
 
 
-
-
-
-
-
----------------------------------------
 
 tig (brew install tig)
 
@@ -62,3 +57,70 @@ right side: shift option k
 left monitor: shift cntrl j
 right monitor: shift cntrl k
 
+
+
+--------------MAC SETTINGS-----------------------
+
+
+other setup stuff:
+https://github.com/nicolashery/mac-dev-setup
+
+Space bar in mac dialoag boxes:
+https://superuser.com/questions/473143/how-to-tab-between-buttons-on-an-mac-os-x-dialog-box
+
+
+
+
+Mac OS X also has dialog boxes, such as the 'Save As'-box (CMD+SHIFT+S) or the 'Print'-box (CMD+P). You can tweak the speed at which all of these boxes appear by using these commands:
+
+Instant:
+
+defaults write NSGlobalDomain NSWindowResizeTime .001
+Fast:
+
+defaults write NSGlobalDomain NSWindowResizeTime .1
+Default (0.2 seconds):
+
+defaults delete NSGlobalDomain NSWindowResizeTime
+
+
+
+
+
+defaults write -g NSAutomaticWindowAnimationsEnabled -bool false
+defaults write -g NSScrollAnimationEnabled -bool false
+defaults write -g NSWindowResizeTime -float 0.001
+defaults write -g QLPanelAnimationDuration -float 0
+defaults write -g NSScrollViewRubberbanding -bool false
+defaults write -g NSDocumentRevisionsWindowTransformAnimation -bool false
+defaults write -g NSToolbarFullScreenAnimationDuration -float 0
+defaults write -g NSBrowserColumnAnimationSpeedMultiplier -float 0
+defaults write com.apple.dock autohide-time-modifier -float 0
+defaults write com.apple.dock autohide-delay -float 0
+defaults write com.apple.dock expose-animation-duration -float 0
+defaults write com.apple.dock springboard-show-duration -float 0
+defaults write com.apple.dock springboard-hide-duration -float 0
+defaults write com.apple.dock springboard-page-duration -float 0
+defaults write com.apple.finder DisableAllAnimations -bool true
+defaults write com.apple.Mail DisableSendAnimations -bool true
+defaults write com.apple.Mail DisableReplyAnimations -bool true
+
+TO UNDO:
+
+defaults delete -g NSAutomaticWindowAnimationsEnabled
+defaults delete -g NSScrollAnimationEnabled
+defaults delete -g NSWindowResizeTime
+defaults delete -g QLPanelAnimationDuration
+defaults delete -g NSScrollViewRubberbanding
+defaults delete -g NSDocumentRevisionsWindowTransformAnimation
+defaults delete -g NSToolbarFullScreenAnimationDuration
+defaults delete -g NSBrowserColumnAnimationSpeedMultiplier
+defaults delete com.apple.dock autohide-time-modifier
+defaults delete com.apple.dock autohide-delay
+defaults delete com.apple.dock expose-animation-duration
+defaults delete com.apple.dock springboard-show-duration
+defaults delete com.apple.dock springboard-hide-duration
+defaults delete com.apple.dock springboard-page-duration
+defaults delete com.apple.finder DisableAllAnimations
+defaults delete com.apple.Mail DisableSendAnimations
+defaults delete com.apple.Mail DisableReplyAnimations
