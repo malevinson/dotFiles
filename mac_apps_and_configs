@@ -68,8 +68,13 @@ view and copy git branch names easier:
 
 git config --global pager.branch false
 1: brew install vim --with-client-server        2: in ~/.vimrc set clipboard=unnamed   3:  git branch | vim -  (added as alias gbv) .  exit vim: shift + Z + Q
-then to ignore .swp files globally: https://stackoverflow.com/questions/4824188/git-ignore-vim-temporary-files
- 
+then to ignore .swp files globally:
+make ~/.gitignore
+with:
+*.swp
+*.swn
+*.swo
+ then run .     git config --global core.excludesfile ~/.gitignore
 
 
 
