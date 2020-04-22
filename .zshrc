@@ -11,8 +11,12 @@ export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/share/npm/bin:$PATH"
 eval "$(rbenv init -)"
 export NVM_DIR=/Users/mlevinson/.nvm
+
 source /usr/local/opt/nvm/nvm.sh
 
+alias composer="php /usr/local/bin/composer.phar"
+
+alias gpwd="git diff -- name-only HEAD | grep '.*\.js' | xargs prettier -- write"
 alias gsv="git status | vim -"
 alias cb="git branch | grep '^\*' | cut -d' ' -f2 | pbcopy"
 alias gbv="git branch | vim -"
@@ -28,7 +32,8 @@ alias gr='git reset'
 alias gdel='git branch -D'
 alias gdf='git diff'
 alias grof='git checkout HEAD --'
-alias s='git add . && git commit -m "save"'
+alias s='git add . && git commit -m "working"'
+alias sn='git add . && git commit -m "not working"'
 alias g='git'
 alias k='gitk'
 alias gcp='git cherry-pick'
@@ -205,3 +210,6 @@ if [ -f '/Users/mlevinson/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/U
 if [ -f '/Users/mlevinson/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/mlevinson/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 export PATH="/usr/local/opt/php@7.2/bin:$PATH"
 export PATH="/usr/local/opt/php@7.2/sbin:$PATH"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
