@@ -1,0 +1,143 @@
+alias ll='ls -la'
+alias yb='yarn build'
+alias ysb='yarn storybook'
+alias yad='yarn add -D'
+alias gbm='git branch --merged | grep -v "\*"'
+alias ysl='yarn stylelint'
+alias yslf='yarn stylelint --fix'
+alias y='yarn'
+alias yays='yarn && yarn start'
+alias us='git add . && git commit -m "untested solution"'
+alias gbmd='git branch --merged | grep -v "\*" | xargs -n 1 git branch'
+
+alias us='git add . && git commit -m "untested solution"'
+alias gsbc='git branch --sort=committerdate'
+
+alias fs='git commit -m "------------ files saved ------------"'
+alias yb="yarn build"
+alias ysp="yarn start-prod"
+alias sn='git add . && git commit -m "add notes"'
+
+alias gsbd="git for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'"
+alias gpwd="git diff -- name-only HEAD | grep '.*\.js' | xargs prettier -- write"
+alias gsv="git status | vim -"
+alias cb="git branch | grep '^\*' | cut -d' ' -f2 | pbcopy"
+alias gbv="git branch | vim -"
+alias gdd='git diff --ignore-space-at-eol -b -w --ignore-blank-lines'
+alias gap='git add -p'
+alias cpyml='git cherry-pick yml'
+alias ts='tig status'
+alias glp='git log -p'
+alias nv='--no-verify'
+alias gco='git checkout'
+alias gcb='git checkout -b'
+alias gr='git reset'
+alias gdel='git branch -D'
+alias gd='git diff --color-words'
+alias grof='git checkout HEAD --'
+alias s='git add . && git commit --no-verify -m "s"'
+alias g='git'
+alias k='gitk'
+alias ls='ls -Gl'
+alias glds='git log --pickaxe-regex -p --color-words -S ""'
+alias gcp='git cherry-pick'
+alias gsh='git stash'
+alias gash='git stash -k -u'
+alias gshp='git stash pop'
+alias gsl='git stash list'
+
+alias gsa='git stash apply'
+alias gss='git stash save'
+alias gs='git status'
+alias gl='git log'
+alias grc='git rebase --continue'
+alias gra='git rebase --abort'
+alias gmc='git merge --continue'
+alias gma='git merge --abort'
+alias gcpc='git cherry-pick --continue'
+alias gcpa='git cherry-pick --abort'
+alias gcpa='git cherry-pick --abort'
+alias glf='git log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%an]" --decorate --stat'
+alias gl1='git log --numstat -1'
+alias gl2='git log --numstat -2'
+alias gl3='git log --numstat -3'
+alias gw='git show'
+alias gld='git log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%an]" --decorate --date=relative'
+alias gprom='git pull --rebase origin master'
+alias gprod='git pull --rebase origin develop'
+alias gpro='git pull --rebase origin'
+alias gpod='git pull origin develop'
+alias gpom='git pull origin master'
+alias gp='git pull'
+alias gpo='git push origin'
+alias gfa='git fetch --all'
+alias grhom='git reset --hard origin/master'
+alias grho='git reset --hard origin/'
+alias gpo='git push origin HEAD'
+alias gsa1='git stash apply stash@{1}'
+alias gsa2='git stash apply stash@{2}'
+alias grhod='git reset --hard origin/develop'
+alias gcm='git checkout master'
+alias gcod='git checkout develop'
+alias grh='git reset HEAD~'
+alias grh2='git reset HEAD~2'
+alias grh3='git reset HEAD~3'
+alias grh4='git reset HEAD~4'
+alias grh5='git reset HEAD~5'
+alias grh6='git reset HEAD~6'
+alias grh7='git reset HEAD~7'
+alias grh8='git reset HEAD~8'
+alias grh9='git reset HEAD~9'
+alias ga='git add .'
+alias gca='git commit --amend '
+alias gas='git add . && git stash'
+alias gr='git reset'
+alias t='tig'
+alias gb='git branch'
+alias gch='git checkout -p'
+alias gll="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --decorate --date=short"
+
+alias cv="git commit --no-verify -m 'save'"
+alias sv='git add . && git commit --no-verify -m "save"'
+alias gc='git commit -am'
+alias gm='git commit -m'
+
+alias gsc='git stash clear'
+
+alias json='cat $1 | python -m json.tool'
+alias grp='git rev-parse --short=7 HEAD | pbcopy'
+alias yt='yarn tsc -p tsconfig.json'
+alias yts='yarn test'
+alias ys='yarn start'
+alias ya='yarn add'
+alias yj='yarn jest -u'
+alias ye='yarn eslint'
+alias gpr='git pull --rebase origin'
+
+alias lsn='ls -lu'
+alias lsd='ls -tlh'
+alias lss='ls -Slhr'
+
+alias gcbp='git checkout -b PICA-'
+alias gdc='git diff --cached'
+
+alias gf='git log --follow'
+alias gbl='git blame'
+
+
+alias nv='nvim'
+
+alias hf='history | fzf'
+
+alias mk='minikube'
+alias k='kubectl'
+
+alias gk='git commit -m "files------KEEP"'
+alias gt='git commit -m "files------TBD"'
+alias gn='git commit -m "notes"'
+
+alias gcom='git checkout origin/master'
+alias gfac='git fetch --all && git checkout origin/master'
+alias gfam='git fetch --all && git merge origin/master'
+
+

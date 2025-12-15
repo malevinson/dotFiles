@@ -1,0 +1,67 @@
+{
+  "Console: log (simple)": {
+    "prefix": "cl",
+    "body": ["console.log($1);$0"],
+    "description": "console.log with a single value"
+  },
+  "Console: log (label + value)": {
+    "prefix": "cll",
+    "body": ["console.log('$1:', $1);$0"],
+    "description": "console.log with label and value"
+  },
+  "Console: log JSON": {
+    "prefix": "clj",
+    "body": ["console.log(JSON.stringify($1, null, 2));$0"],
+    "description": "Pretty-print JSON with console.log"
+  },
+  "Console: warn": {
+    "prefix": "cw",
+    "body": ["console.warn($1);$0"],
+    "description": "console.warn"
+  },
+  "Console: error": {
+    "prefix": "ce",
+    "body": ["console.error($1);$0"],
+    "description": "console.error"
+  },
+
+
+
+
+
+
+  "Print to console lg": {
+    "prefix": "lg",
+    "body": [
+      "console.log('%c %s', 'background: #f4427a; color: white', '${1:LOG}', $2);$0"
+    ],
+    "description": "Front-end log with magenta highlight and label + value"
+  },
+  "Print to console ld": {
+    "prefix": "ld",
+    "body": ["console.log($1);$0"],
+    "description": "Vanilla log (alias of cl)"
+  },
+  "Print to node console ll": {
+    "prefix": "ll",
+    "body": ["console.log('LOG |||||||---------->');", "console.log($1);$0"],
+    "description": "Back-end log with banner"
+  },
+  "Devtools: green border": {
+    "prefix": "bd",
+    "body": ["border: 0.1rem solid green;"],
+    "description": "CSS border for debugging"
+  },
+  "Print to console lk": {
+    "prefix": "lk",
+    "body": [
+      "console.log('%c %s', 'background: #0d7200; color: white', '${1:OK}', $2);$0"
+    ],
+    "description": "Green highlighted log with label + value"
+  },
+  "Print to console ls": {
+    "prefix": "ls",
+    "body": ["console.log(JSON.stringify($1));$0"],
+    "description": "Stringify value into JSON and log"
+  }
+}
