@@ -139,5 +139,5 @@ alias gn='git commit -m "notes"'
 alias gcom='git checkout origin/master'
 alias gfac='git fetch --all && git checkout origin/master'
 alias gfam='git fetch --all && git merge origin/master'
-
+alias gplo='git pull origin'
 
